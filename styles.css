@@ -1,0 +1,39 @@
+input {
+  width: 150px;
+  float: left;
+  }
+
+.sun {
+  width: 100px;
+  height: 100px;
+  background-color: yellow;
+  /* visibility: hidden */
+  float: left;
+  margin-top: 100px;
+  animation: bobble 20s infinite alternate;
+    margin-left: 100px;
+    margin-top: 15px;
+  
+}
+@keyframes bobble {
+    0% {
+        transform: translate(0, 0);
+        animation-timing-function: ease-in;
+    }
+    50% {
+        transform: translate(0px, 900px);
+        animation-timing-function: ease-in;
+    }
+    100% {
+        transform: translate(0px, -900px);
+      animation-timing-function: ease-out;
+    }
+}
+.cloud {
+  width: 100px;
+  height: 100px;
+  background-color: grey;
+  float: right;
+  margin-top: 100px;
+}
+
